@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search in page</title>
+	
+</head>
+<body>
+	
+	<form>
+	search here: <textarea type="text" id="search_element"></textarea>
+	   <select id ="s" onclick="optional()">
+  		<option value="google" >google</option>
+  		<option value="yahoo" >yahoo</option>
+  		<option value="bing" >bing</option>
+ 		<option value="duckduckgo" >duckduckgo</option>
+	   </select>
+	</form>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxULpuccEfWsT42kfzerycd51-XQpqB7Y&callback=myMap"></script>
+	<script type="text/javascript">	
+		 function optional()	{
+			if(document.getElementById('s').value=="google")
+			  window.location = "https://www.google.co.in";
+			if(document.getElementById('s').value=="yahoo")
+			  window.location = "https://www.yahoo.com";
+			if(document.getElementById('s').value=="bing")
+			  window.location = "https://www.bing.com";
+			if(document.getElementById('s').value=="duckduckgo")
+			  window.location = "https://duckduckgo.com";
+			}
+		
+	</script>
+</body>
+</html>
